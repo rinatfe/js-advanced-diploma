@@ -1,6 +1,16 @@
 export function calcTileType(index, boardSize) {
-  // TODO: write logic here
-  return 'center';
+  const list = [
+    'top-left',
+    'top-right',
+    'top',
+    'bottom-left',
+    'bottom-right',
+    'bottom',
+    'right',
+    'left',
+    'center'
+]
+  return list[index];
 }
 
 export function calcHealthLevel(health) {
@@ -14,3 +24,5 @@ export function calcHealthLevel(health) {
 
   return 'high';
 }
+
+
